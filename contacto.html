@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Home Dentale</title>
 
     <!-- - favicon -->
@@ -19,12 +20,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <script>
+        function load_header() {
+            document.getElementById("contenidoHeader").innerHTML = '<object type="text/html" data="footer.html" width="100%" height="100vh";  "></object>';
+        }   
+    </script>
 </head>
 
 <body>
 
-    <!-- Cabecera -->
 
+    <!-- Cabecera -->
     <header class="header" data-header>
         <div class="container">
 
@@ -62,10 +69,10 @@
                 </ul>
 
                 <!-- <div class="header-actions">
-                    <a href="#" class="header-action-link">Log in</a>
-
-                    <a href="#" class="header-action-link">Register</a>
-                </div> -->
+                                <a href="#" class="header-action-link">Log in</a>
+            
+                                <a href="#" class="header-action-link">Register</a>
+                            </div> -->
             </nav>
 
         </div>
@@ -73,284 +80,234 @@
     <!-- Fin cabecera -->
 
 
-    <!-- ------------ Primera sección -------------- -->
-    <section class="general" id="general">
+    <!--Inicio contacto-->
+    <section class="contacto" id="contacto">
         <div class="container">
 
-            <div class="general-content">
-                <h1 class="h1 general-title">Bienvenido a Dentale</h1>
+            <h2 class="h2 section-title">Contacta con nosotros</h2>
 
-                <p class="general-text">
-                    Somos especialistas altamente calificados en odontología, por lo que conocemos a detalle las
-                    necesidades que involucra tener una buena salud y estética dental, por eso somos la clínica
-                    preferida en la región.
+            <p class="section-text">
+                ¿Necesitas ponerte en contacto con nosotros?
+                Puedes rellenar nuestro formulario online para enviar un mensaje a nuestro especialista.
+                Trataremos de responder a tu mensaje en un plazo de 2 días laborables.
+            </p>
 
-                </p>
+            <div class="contacto-wrapper">
 
-                <p class="form-text">
-                    Gracias al conocimiento, ética y destreza de nuestros especialistas, al estudiar a conciencia cada
-                    caso, logramos alcanzar los resultados deseados, ofreciéndote la mejor calidad y profesionalismo al
-                    mejor costo.
-                </p>
+                <form action="" class="contacto-form" id="form">
 
-                <!--
-                        <form action="" class="general-form">
-                            <input type="email" name="email" required placeholder="Enter Your Email"
-                                class="email-field">
+                    <div class="wrapper-flex">
 
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form> -->
+                        <div class="input-wrapper">
+                            <label for="name">Nombre*</label>
+
+                            <input type="text" name="nombre" required placeholder="Ingresa tu nombre"
+                                class="input-field">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="emai">Correo*</label>
+
+                            <input type="text" name="correo" required placeholder="Ingresa tu email"
+                                class="input-field">
+                        </div>
+
+                    </div>
+
+                    <label for="message">Mensaje*</label>
+
+                    <textarea name="mensaje"  required placeholder="Escribe tu mensaje"
+                        class="input-field"></textarea>
+
+                    
+                    <input type="submit" id="button" class="btn btn-primary" value="ENVIAR MENSAJE">
+
+                </form>
+                
+                
+                <ul class="contacto-list">
+
+                    <li>
+                        <a href="" class="contacto-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <span>: alerobles19@icloud.com </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="contacto-link">
+                            <ion-icon name="globe-outline"></ion-icon>
+
+                            <span>: www.Dentale.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tel:+0011234567890" class="contacto-link">
+                            <ion-icon name="call-outline"></ion-icon>
+
+                            <span>: (+52) 922 183 3587</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="contacto-link">
+                            <ion-icon name="time-outline"></ion-icon>
+
+                            <span>: 8:00 AM - 7:00 PM</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="contacto-link">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>: Rio Coatzacoalcos #50B. Col. Infonavit “El paquital”. Minatitlán, Ver. </address>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
-
-
-            <figure class="general-banner">
-                <img src="images/dentista.jpg" alt="imagen dentista">
-            </figure>
 
         </div>
     </section>
 
-    <!-- ------------ FIN Primera sección -------------- -->
-    <!-- 
-        - Acerca de DENTALE
-      -->
+    <!-- FIN de contacto-->
 
-
-    <section class="acercaDe">
-        <h2 class="h2 section-title">Somos Dentale</h2>
-
-        <p class="section-text">
-            Garantizamos diagnósticos completos y ofrecemos diversas formas de cuidado dental, procedimientos
-            quirúrgicos y servicios dentales cosméticos.
-        </p>
-        <div class="container">
-
-
-            <div class="acercaDe-content">
-
-                <div class="acercaDe-icon">
-
-                    <ion-icon name="medkit"></ion-icon>
-                </div>
-
-                <h2 class="h2 acercaDe-title">Equipo de última generación</h2>
-
-                <p class="acercaDe-text">
-                    Nos mantenemos en constante actualización de nuestro equipo médico para tu máxima seguridad, siempre
-                    tendrás tratamientos con lo mejor del mercado, dentale está desde tu inicio hasta el fin.
-                </p>
-
-                <button class="btn btn-outline">Saber más</button>
-
-            </div>
-
-            <ul class="acercaDe-list">
-
-                <li>
-                    <div class="acercaDe-card">
-
-                        <div class="card-icon">
-                            <ion-icon name="navigate"></ion-icon>
-                        </div>
-
-                        <h3 class="h3 card-title">Ubicación conveniente</h3>
-
-                        <p class="card-text">
-                            Nos localizamos en una ubicación transitada para tu facil acceso, nos encontramos en google
-                            Maps para tu mejor comodidad
-                        </p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="acercaDe-card">
-
-                        <div class="card-icon">
-                            <ion-icon name="time"></ion-icon>
-                        </div>
-
-                        <h3 class="h3 card-title">Poco o nada tiempo de espera</h3>
-
-                        <p class="card-text">
-                            Agenda citas por medio del correo electrónico o redes sociales, olvida las largas esperas en
-                            que siga tu turno, nos acomodamos a tu horario.
-                        </p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="acercaDe-card">
-
-                        <div class="card-icon">
-                            <ion-icon name="trophy"></ion-icon>
-                        </div>
-
-                        <h3 class="h3 card-title">Consulta profesional</h3>
-
-                        <p class="card-text">
-                            Nuestra dentista principal es egresada de la prestigiosa Universidad Veracruzana,con una
-                            cédula profesional avalada por los organismos correspondientes.
-                        </p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="acercaDe-card">
-
-                        <div class="card-icon">
-                            <ion-icon name="star"></ion-icon>
-                        </div>
-
-                        <h3 class="h3 card-title">Satisfacción garantizada</h3>
-
-                        <p class="card-text">
-                            Todos nuestros clientes nos recomiendan comunmente, dado a los servicios de calidad que
-                            otorgamos a los pacientes, contamos con satisfacción garantizada.
-                        </p>
-
-                    </div>
-                </li>
-
-            </ul>
-
-        </div>
-    </section>
-    <!-- ---------Fin acerca de DENTALE--------- -->
 
     <!-- ---------Pie página--------- -->
     <footer>
-
+    
         <div class="footer-top">
             <div class="container">
-
+    
                 <div class="footer-brand">
-
+    
                     <a href="#" class="logo">
                         <img src="images/logo.jpg" alt="Logo dentale">
                     </a>
-
+    
                     <p class="footer-text">
                         Somos especialistas altamente calificados en odontología, por lo que conocemos a detalle las
                         necesidades.
-
+    
                     </p>
-
+    
                     <ul class="social-list">
-
+    
                         <li>
                             <a href="#" class="social-link">
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="social-link">
                                 <ion-icon name="logo-twitter"></ion-icon>
                             </a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="social-link">
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="social-link">
                                 <ion-icon name="logo-linkedin"></ion-icon>
                             </a>
                         </li>
-
+    
                     </ul>
-
+    
                 </div>
-
+    
                 <div class="footer-link-box">
-
+    
                     <ul class="footer-list">
-
+    
                         <li>
                             <p class="footer-item-title">Nuestros servicios</p>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Consultas</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Emergencias</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Blanqueamiento</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Carillas</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Frenos invisiables</a>
                         </li>
-
+    
                     </ul>
-
+    
                     <ul class="footer-list">
-
+    
                         <li>
                             <p class="footer-item-title">Ligas de interés</p>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Diseño de sonrisa</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Sonrisas famosas</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Aviso de privacidad</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Planes de pago</a>
                         </li>
-
+    
                     </ul>
-
+    
                     <ul class="footer-list">
-
+    
                         <li>
                             <p class="footer-item-title">Acerca de nosotros</p>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Misión</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Visión</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Valores</a>
                         </li>
-
+    
                         <li>
                             <a href="#" class="footer-link">Ubicación</a>
                         </li>
-
+    
                     </ul>
-
+    
                 </div>
-
+    
             </div>
         </div>
-
+    
         <div class="footer-bottom">
             <div class="container">
                 <p class="copyright">
@@ -358,22 +315,28 @@
                 </p>
             </div>
         </div>
-
     </footer>
     <!-- ---------FIN Pie página--------- -->
 
 
+        <!--Menú desplegable -->
+        <script src="js/script.js"></script>
 
+        <!-- - ionicon link ---- Iconos de la libreria ionicon -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <!--Menú desplegable -->
-
-
-    <script src="js/script.js"></script>
-
-    <!-- - ionicon link ---- Iconos de la libreria ionicon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- Script para mandar mensajes -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+            emailjs.init('7aNk-SfJ-AMzTP7cs')
+        </script>
+        <script src="js/enviarCorreo.js">
+        </script>
+        
 
 </body>
-
+    
+    
 </html>
